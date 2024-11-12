@@ -7,34 +7,35 @@
   <style>
     /* Add a tiling background */
     body {
-      background-image: url('path/to/your-background-image.jpg'); /* Replace with your background image path */
-      background-repeat: repeat; /* Makes the image tile */
+      background-image: url('assets/tiled.png'); /* Uses the tiled texture for the background */
+      background-repeat: repeat; /* Repeats the image to create a tiled effect */
       background-size: auto; /* Ensures the image tiles at its original size */
       text-align: center; /* Center-aligns the content */
       font-family: Arial, sans-serif; /* Sets a default font */
       color: #ffffff; /* Adjusts text color for better contrast on the background */
-      padding: 0;
       margin: 0;
+      padding: 0;
     }
 
     /* Center the header image */
     .header-image {
       display: block;
-      margin: 20px auto; /* Centers the image and adds some spacing */
-      width: 80%; /* Adjust width as needed */
-      max-width: 600px; /* Prevents the image from being too wide */
+      margin: 20px auto; /* Centers the image and adds some spacing at the top */
+      width: 100px; /* Sets a fixed width; adjust as needed */
+      max-width: 200px; /* Ensures the image doesn’t exceed 200px */
     }
 
     /* Style for the main heading */
     h1 {
       font-size: 1.5em;
-      margin-top: 20px;
+      margin-top: 10px;
+      padding: 0 10px;
     }
   </style>
 </head>
 <body>
   <!-- Add a centered header image -->
-  <img src="path/to/your-header-image.jpg" alt="Header Image" class="header-image"> <!-- Replace with your header image path -->
+  <img src="assets/thevoice_icon.png" alt="The Voice Icon" class="header-image">
 
   <!-- Main content -->
   <h1>You out there, Survivor? Ask me anything about MadWorld. Features of the game, how it works, or really anything.</h1>
