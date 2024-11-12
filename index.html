@@ -2,11 +2,42 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scaled=1.0">
-  <title>ElevenLabs Test</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meet The Voice</title>
+  <style>
+    /* Add a tiling background */
+    body {
+      background-image: url('path/to/your-background-image.jpg'); /* Replace with your background image path */
+      background-repeat: repeat; /* Makes the image tile */
+      background-size: auto; /* Ensures the image tiles at its original size */
+      text-align: center; /* Center-aligns the content */
+      font-family: Arial, sans-serif; /* Sets a default font */
+      color: #ffffff; /* Adjusts text color for better contrast on the background */
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Center the header image */
+    .header-image {
+      display: block;
+      margin: 20px auto; /* Centers the image and adds some spacing */
+      width: 80%; /* Adjust width as needed */
+      max-width: 600px; /* Prevents the image from being too wide */
+    }
+
+    /* Style for the main heading */
+    h1 {
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <h1>You out there Survivor? Ask me anything about MadWorld. Features of the game, how it works, or really anything.</h1>
+  <!-- Add a centered header image -->
+  <img src="path/to/your-header-image.jpg" alt="Header Image" class="header-image"> <!-- Replace with your header image path -->
+
+  <!-- Main content -->
+  <h1>You out there, Survivor? Ask me anything about MadWorld. Features of the game, how it works, or really anything.</h1>
   <elevenlabs-convai agent-id="HTQ8AmeHKT01onF4NjtK"></elevenlabs-convai>
   <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
 </body>
