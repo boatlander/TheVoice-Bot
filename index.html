@@ -5,18 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Meet The Voice</title>
   <style>
-    /* Add a tiling background */
+    /* Make body take the full viewport height and center content */
     body {
       background-image: url('https://github.com/boatlander/assets/raw/main/tiled.png');
       background-repeat: repeat;
-      text-align: center;
       font-family: Arial, sans-serif;
       color: #e0e0e0; /* Slightly off-white text color */
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh; /* Full viewport height */
+      text-align: center;
+      flex-direction: column;
     }
 
-    /* Center the header image */
+    /* Centered header image at the top */
     .header-image {
       display: block;
       margin: 20px auto;
@@ -26,16 +31,22 @@
 
     /* Style for the main heading */
     h1 {
-      font-size: 1.2em; /* Slightly reduced font size */
+      font-size: 1.2em;
       margin-top: 10px;
       padding: 0 10px;
-      color: #e0e0e0; /* Off-white color for the main text */
+      color: #e0e0e0;
     }
 
     /* Subtext styling for smaller font */
     .subtext {
-      font-size: 1em; /* Further reduced font size */
-      color: #e0e0e0; /* Off-white color */
+      font-size: 1em;
+      color: #e0e0e0;
+    }
+
+    /* Centered image styling */
+    .centered-image {
+      max-width: 80%; /* Adjust based on preference */
+      max-height: 80%; /* Ensures it fits on smaller screens */
     }
 
     /* Footer styling */
@@ -50,7 +61,7 @@
 
     /* Link styling */
     .footer-link {
-      color: #1da1f2; /* X's branding color */
+      color: #1da1f2;
       text-decoration: none;
     }
     .footer-link:hover {
@@ -59,12 +70,16 @@
   </style>
 </head>
 <body>
-  <!-- Add a centered header image -->
+  <!-- Centered header image -->
   <img src="https://github.com/boatlander/assets/raw/main/thevoice_icon.png" alt="The Voice Icon" class="header-image">
 
-  <!-- Main content -->
-  <h1>You out there, Survivor?<br><br> <!-- Added an extra line break here -->
-    <span class="subtext">Ask me anything about MadWorld. Features of the game, how it works, or really anything.</span></h1>
+  <!-- Main content text with line break and reduced size -->
+  <h1>You out there, Survivor?<br><br> <!-- Extra line break here -->
+    <span class="subtext">Ask me anything about MadWorld. Features of the game, how it works, or really anything.</span>
+  </h1>
+
+  <!-- Centered main image in the middle of the page -->
+  <img src="https://github.com/boatlander/assets/raw/main/screenshot.png" alt="Centered Screenshot" class="centered-image">
 
   <!-- Eleven Labs widget -->
   <elevenlabs-convai agent-id="HTQ8AmeHKT01onF4NjtK"></elevenlabs-convai>
