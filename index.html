@@ -11,7 +11,7 @@
       background-repeat: repeat;
       text-align: center;
       font-family: Arial, sans-serif;
-      color: #ffffff;
+      color: #e0e0e0; /* Slightly off-white text color */
       margin: 0;
       padding: 0;
     }
@@ -26,17 +26,10 @@
 
     /* Style for the main heading */
     h1 {
-      font-size: 1.5em;
+      font-size: 1.2em; /* Slightly reduced font size */
       margin-top: 10px;
       padding: 0 10px;
-    }
-
-    /* Center Eleven Labs widget container */
-    .widget-container {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-      width: 100%; /* Ensures the widget container spans the page width */
+      color: #e0e0e0; /* Off-white color for the main text */
     }
 
     /* Footer styling */
@@ -64,19 +57,15 @@
   <img src="https://github.com/boatlander/assets/raw/main/thevoice_icon.png" alt="The Voice Icon" class="header-image">
 
   <!-- Main content -->
-  <h1>You out there, Survivor? Ask me anything about MadWorld. Features of the game, how it works, or really anything.</h1>
+  <h1>You out there, Survivor?<br> <!-- Line break after the initial question -->
+    Ask me anything about MadWorld. Features of the game, how it works, or really anything.</h1>
 
-  <!-- Centered Eleven Labs widget with line breaks after -->
-  <div class="widget-container">
-    <elevenlabs-convai agent-id="HTQ8AmeHKT01onF4NjtK"></elevenlabs-convai>
-  </div>
-  <br><br> <!-- Adds two line breaks after the widget -->
-
+  <!-- Eleven Labs widget -->
+  <elevenlabs-convai agent-id="HTQ8AmeHKT01onF4NjtK"></elevenlabs-convai>
   <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
 
-  <!-- Footer with X link and line break -->
+  <!-- Footer with X link -->
   <footer>
-    Follow us on X at:<br>
     <a href="https://x.com/playmadworld" target="_blank" class="footer-link">@playmadworld</a>
   </footer>
 </body>
