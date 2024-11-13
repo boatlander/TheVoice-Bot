@@ -7,12 +7,11 @@
   <style>
     /* Add a tiling background */
     body {
-      background-image: url('https://github.com/boatlander/assets/raw/main/tiled.png'); /* Uses the tiled texture for the background */
-      background-repeat: repeat; /* Repeats the image to create a tiled effect */
-      background-size: auto; /* Ensures the image tiles at its original size */
-      text-align: center; /* Center-aligns the content */
-      font-family: Arial, sans-serif; /* Sets a default font */
-      color: #ffffff; /* Adjusts text color for better contrast on the background */
+      background-image: url('https://github.com/boatlander/assets/raw/main/tiled.png');
+      background-repeat: repeat;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      color: #ffffff;
       margin: 0;
       padding: 0;
     }
@@ -20,9 +19,9 @@
     /* Center the header image */
     .header-image {
       display: block;
-      margin: 20px auto; /* Centers the image and adds some spacing at the top */
-      width: 100px; /* Sets a fixed width; adjust as needed */
-      max-width: 200px; /* Ensures the image doesn’t exceed 200px */
+      margin: 20px auto;
+      width: 100px;
+      max-width: 200px;
     }
 
     /* Style for the main heading */
@@ -30,6 +29,32 @@
       font-size: 1.5em;
       margin-top: 10px;
       padding: 0 10px;
+    }
+
+    /* Center Eleven Labs widget container */
+    .widget-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    /* Footer styling */
+    footer {
+      position: fixed;
+      bottom: 10px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 1em;
+    }
+
+    /* Link styling */
+    .footer-link {
+      color: #1da1f2; /* X's branding color */
+      text-decoration: none;
+    }
+    .footer-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -39,7 +64,18 @@
 
   <!-- Main content -->
   <h1>You out there, Survivor? Ask me anything about MadWorld. Features of the game, how it works, or really anything.</h1>
-  <elevenlabs-convai agent-id="HTQ8AmeHKT01onF4NjtK"></elevenlabs-convai>
+
+  <!-- Centered Eleven Labs widget -->
+  <div class="widget-container">
+    <elevenlabs-convai agent-id="HTQ8AmeHKT01onF4NjtK"></elevenlabs-convai>
+  </div>
+
   <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
+
+  <!-- Footer with X link -->
+  <footer>
+    Follow us on X at:
+    <a href="https://x.com/playmadworld" target="_blank" class="footer-link">@playmadworld</a>
+  </footer>
 </body>
 </html>
