@@ -36,6 +36,7 @@
       display: flex;
       justify-content: center;
       margin-top: 20px;
+      width: 100%; /* Ensures the widget container spans the page width */
     }
 
     /* Footer styling */
@@ -65,16 +66,17 @@
   <!-- Main content -->
   <h1>You out there, Survivor? Ask me anything about MadWorld. Features of the game, how it works, or really anything.</h1>
 
-  <!-- Centered Eleven Labs widget -->
+  <!-- Centered Eleven Labs widget with line breaks after -->
   <div class="widget-container">
     <elevenlabs-convai agent-id="HTQ8AmeHKT01onF4NjtK"></elevenlabs-convai>
   </div>
+  <br><br> <!-- Adds two line breaks after the widget -->
 
   <script src="https://elevenlabs.io/convai-widget/index.js" async type="text/javascript"></script>
 
-  <!-- Footer with X link -->
+  <!-- Footer with X link and line break -->
   <footer>
-    Follow us on X at:
+    Follow us on X at:<br>
     <a href="https://x.com/playmadworld" target="_blank" class="footer-link">@playmadworld</a>
   </footer>
 </body>
